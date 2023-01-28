@@ -1,0 +1,26 @@
+#root {
+  height: 500px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.resizer {
+  max-width: var(--resizer-max-w, 500px);
+  height: 100%;
+  display: flex;
+}
+
+.resizer_content {
+  overflow: hidden;
+  text-overflow: hidden;
+}
+
+.resizer_dragger {
+  width: var(--dragger-width, 0.25rem);
+  background-color: var(--dragger-bg, black);
+  cursor: col-resize;
+  border-radius: var(--dragger-radius, 2rem);
+}
